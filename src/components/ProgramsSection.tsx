@@ -1,6 +1,5 @@
 import { Plane, Hotel, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
-import { Button } from '@/components/ui/button';
 
 const ProgramsSection = () => {
   const programs = [
@@ -45,13 +44,7 @@ const ProgramsSection = () => {
                   <program.icon className="h-10 w-10 text-primary group-hover:text-accent transition-smooth" />
                 </div>
                 <h3 className="text-2xl font-bold text-foreground mb-4">{program.title}</h3>
-                <p className="text-muted-foreground mb-6 leading-relaxed">{program.description}</p>
-                <Button
-                  variant="outline"
-                  className="border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-smooth"
-                >
-                  Learn More
-                </Button>
+                <p className="text-muted-foreground leading-relaxed">{program.description}</p>
               </div>
             </Card>
           ))}

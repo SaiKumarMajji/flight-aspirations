@@ -39,7 +39,7 @@ const TrainersSection = () => {
           {trainers.map((trainer, index) => (
             <Card
               key={index}
-              className="overflow-hidden hover:shadow-large transition-smooth group animate-slide-up border-2 border-border hover:border-accent"
+              className="overflow-hidden hover:shadow-large transition-smooth group animate-slide-up border-2 border-border hover:border-accent gradient-sky h-full"
               style={{ animationDelay: `${index * 0.1}s` }}
             >
               <div className="aspect-square overflow-hidden">
@@ -49,7 +49,7 @@ const TrainersSection = () => {
                   className="w-full h-full object-cover group-hover:scale-110 transition-smooth duration-500"
                 />
               </div>
-              <div className="p-6 text-center gradient-sky">
+              <div className="p-6 text-center">
                 <h3 className="text-xl font-bold text-foreground mb-2">{trainer.name}</h3>
                 <p className="text-primary font-semibold mb-2">{trainer.designation}</p>
                 <p className="text-muted-foreground text-sm">{trainer.experience}</p>
