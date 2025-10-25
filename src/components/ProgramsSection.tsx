@@ -1,4 +1,4 @@
-import { Plane, Users, Sparkles, Headphones } from 'lucide-react';
+import { Plane, Hotel, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 
@@ -6,39 +6,34 @@ const ProgramsSection = () => {
   const programs = [
     {
       icon: Plane,
-      title: 'Cabin Crew Training',
-      description: 'Comprehensive training covering safety procedures, service excellence, and emergency protocols.',
+      title: 'Aviation',
+      description: 'Comprehensive training for cabin crew and ground staff with focus on safety, service excellence, and airline operations.',
     },
     {
-      icon: Users,
-      title: 'Ground Staff Training',
-      description: 'Master airport operations, passenger handling, and airline administrative procedures.',
+      icon: Hotel,
+      title: 'Hospitality',
+      description: 'Master hotel management, guest services, and hospitality operations for premium service delivery.',
     },
     {
-      icon: Sparkles,
-      title: 'Personality & Grooming',
-      description: 'Professional image enhancement, etiquette training, and confidence building sessions.',
-    },
-    {
-      icon: Headphones,
-      title: 'Customer Service Excellence',
-      description: 'Advanced communication skills and service delivery for premium passenger experiences.',
+      icon: Globe,
+      title: 'Travel and Tourism Management',
+      description: 'Explore the travel industry with training in tour operations, destination management, and customer experience.',
     },
   ];
 
   return (
-    <section id="programs" className="py-20 bg-background">
+    <section id="courses" className="py-20 bg-background">
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Our Training <span className="text-primary">Programs</span>
+            Our <span className="text-primary">Courses</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Specialized courses designed to make you industry-ready
+            Specialized programs designed to make you industry-ready
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {programs.map((program, index) => (
             <Card
               key={index}

@@ -17,16 +17,14 @@ const Navigation = () => {
   const navLinks = [
     { href: '#home', label: 'Home' },
     { href: '#about', label: 'About' },
-    { href: '#programs', label: 'Programs' },
+    { href: '#courses', label: 'Courses' },
     { href: '#trainers', label: 'Trainers' },
     { href: '#contact', label: 'Contact' },
   ];
 
   return (
     <nav
-      className={`fixed top-0 left-0 right-0 z-50 transition-smooth ${
-        isScrolled ? 'bg-background/95 backdrop-blur-md shadow-medium' : 'bg-transparent'
-      }`}
+      className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md shadow-medium"
     >
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">

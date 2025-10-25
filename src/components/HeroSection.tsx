@@ -1,5 +1,5 @@
 import { Button } from '@/components/ui/button';
-import { ArrowRight, PlayCircle } from 'lucide-react';
+import { ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-cabin.jpg';
 
 const HeroSection = () => {
@@ -25,21 +25,13 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Become a certified air hostess and start your global aviation journey with expert trainers and industry professionals.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+          <div className="flex justify-center">
             <Button
               size="lg"
               className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold text-lg px-8 py-6 group"
             >
               Apply Now
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
-            </Button>
-            <Button
-              size="lg"
-              variant="outline"
-              className="border-2 border-primary-foreground text-primary-foreground hover:bg-primary-foreground hover:text-secondary text-lg px-8 py-6"
-            >
-              <PlayCircle className="mr-2 h-5 w-5" />
-              Watch Video
             </Button>
           </div>
         </div>
