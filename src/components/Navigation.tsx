@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
-import logo from '@/assets/logo.jpg';
+import logo from '@/assets/logo1.png';
 
 const Navigation = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -45,7 +45,7 @@ const Navigation = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-20">
           <a href="#home" className="flex items-center gap-3 group">
-            <img src={logo} alt="Airline Airhostess Academy Logo" className="h-14 w-14 object-contain" />
+            <img src={logo} alt="Airline Airhostess Academy Logo" className="h-16 w-16 object-fill" />
             <span className="text-xl font-bold text-foreground">Airline Airhostess Academy</span>
           </a>
 

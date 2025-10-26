@@ -32,7 +32,7 @@ const Footer = () => {
           </div>
 
           <p className="text-muted-foreground text-center">
-            © 2025 Aviation Academy. All Rights Reserved.
+            © 2025 Airhostess Academy. All Rights Reserved.
           </p>
         </div>
       </div>

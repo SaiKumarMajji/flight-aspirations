@@ -25,7 +25,7 @@ const AboutSection = () => {
       <div className="container mx-auto px-4">
         <div className="max-w-3xl mx-auto text-center mb-16 animate-fade-in">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6">
-            Welcome to <span className="text-primary">Aviation Academy</span>
+            Welcome to <span className="text-primary">Airhostess Academy</span>
           </h2>
           <p className="text-lg text-muted-foreground leading-relaxed">
             We train aspiring flight attendants to meet international cabin crew standards. With expert instructors, modern training modules, and personalized guidance, we prepare you to soar in your aviation career.
