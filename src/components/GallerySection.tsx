@@ -1,12 +1,14 @@
 import training1 from '@/assets/training-1.jpg';
-import training2 from '@/assets/training-2.jpg';
+import trainingClassroom from '@/assets/training-classroom.jpg';
+import trainingPractice from '@/assets/training-practice.jpg';
+import trainingGrooming from '@/assets/training-grooming.jpg';
 
 const GallerySection = () => {
   const images = [
     { src: training1, alt: 'Cabin crew training session' },
-    { src: training2, alt: 'Student group photo' },
-    { src: training1, alt: 'Mock cabin practice' },
-    { src: training2, alt: 'Grooming session' },
+    { src: trainingClassroom, alt: 'Diverse students in classroom session' },
+    { src: trainingPractice, alt: 'Mixed group practicing cabin exercises' },
+    { src: trainingGrooming, alt: 'Students learning grooming and presentation' },
   ];
 
   return (

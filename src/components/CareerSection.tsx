@@ -1,13 +1,19 @@
 import { CheckCircle, Briefcase, TrendingUp } from 'lucide-react';
+import indigoLogo from '@/assets/airlines/indigo-logo.png';
+import airIndiaLogo from '@/assets/airlines/airindia-logo.png';
+import emiratesLogo from '@/assets/airlines/emirates-logo.png';
+import qatarLogo from '@/assets/airlines/qatar-logo.png';
+import vistaraLogo from '@/assets/airlines/vistara-logo.png';
+import spicejetLogo from '@/assets/airlines/spicejet-logo.png';
 
 const CareerSection = () => {
   const airlines = [
-    { name: 'IndiGo', color: 'text-blue-600' },
-    { name: 'Air India', color: 'text-red-600' },
-    { name: 'Emirates', color: 'text-red-500' },
-    { name: 'Qatar Airways', color: 'text-purple-600' },
-    { name: 'Vistara', color: 'text-purple-700' },
-    { name: 'SpiceJet', color: 'text-red-700' },
+    { name: 'IndiGo', logo: indigoLogo },
+    { name: 'Air India', logo: airIndiaLogo },
+    { name: 'Emirates', logo: emiratesLogo },
+    { name: 'Qatar Airways', logo: qatarLogo },
+    { name: 'Vistara', logo: vistaraLogo },
+    { name: 'SpiceJet', logo: spicejetLogo },
   ];
 
   const benefits = [
@@ -52,9 +58,11 @@ const CareerSection = () => {
                 className="bg-card rounded-lg p-6 flex items-center justify-center shadow-soft hover:shadow-medium transition-smooth group animate-slide-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
-                <span className={`text-lg font-bold ${airline.color} group-hover:scale-110 transition-smooth`}>
-                  {airline.name}
-                </span>
+                <img 
+                  src={airline.logo} 
+                  alt={`${airline.name} logo`}
+                  className="w-full h-auto max-h-16 object-contain group-hover:scale-110 transition-smooth"
+                />
               </div>
             ))}
           </div>
