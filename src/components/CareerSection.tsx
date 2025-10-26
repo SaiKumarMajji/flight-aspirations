@@ -61,7 +61,7 @@ const CareerSection = () => {
                 <img 
                   src={airline.logo} 
                   alt={`${airline.name} logo`}
-                  className="w-full h-auto max-h-16 object-contain group-hover:scale-110 transition-smooth"
+                  className="w-full h-auto max-h-24 object-contain group-hover:scale-110 transition-smooth"
                 />
               </div>
             ))}
