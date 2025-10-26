@@ -25,25 +25,6 @@ const HeroSection = () => {
           </p>
         </div>
       </div>
-
-      {/* Floating Aviation Elements */}
-      <div className="absolute inset-0 z-5 pointer-events-none overflow-hidden">
-        {/* Airplane 1 */}
-        <div className="absolute top-1/4 left-0 animate-[slide-in-right_20s_linear_infinite]">
-          <div className="text-4xl opacity-30">✈️</div>
-        </div>
-        {/* Airplane 2 */}
-        <div className="absolute top-2/3 right-0 animate-[slide-in-right_25s_linear_infinite_5s]">
-          <div className="text-3xl opacity-25">✈️</div>
-        </div>
-        {/* Clouds */}
-        <div className="absolute top-1/3 right-0 animate-[slide-in-right_30s_linear_infinite_2s]">
-          <div className="text-5xl opacity-20">☁️</div>
-        </div>
-        <div className="absolute top-1/2 left-0 animate-[slide-in-right_35s_linear_infinite_8s]">
-          <div className="text-6xl opacity-15">☁️</div>
-        </div>
-      </div>
     </section>
   );
 };
