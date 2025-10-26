@@ -1,4 +1,4 @@
-import { MapPin, Mail, Phone, Send } from 'lucide-react';
+import { MapPin, Mail, Phone } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import { Card } from '@/components/ui/card';
 
@@ -50,14 +50,7 @@ const ContactSection = () => {
             ))}
           </div>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-scale-in">
-            <Button
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold text-lg px-8 py-6 group"
-            >
-              Apply Now
-              <Send className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
-            </Button>
+          <div className="flex justify-center items-center animate-scale-in">
             <Button
               size="lg"
               variant="outline"

@@ -1,5 +1,3 @@
-import { Button } from '@/components/ui/button';
-import { ArrowRight } from 'lucide-react';
 import heroImage from '@/assets/hero-cabin.jpg';
 
 const HeroSection = () => {
@@ -25,22 +23,25 @@ const HeroSection = () => {
           <p className="text-lg md:text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto leading-relaxed">
             Become a certified air hostess and start your global aviation journey with expert trainers and industry professionals.
           </p>
-          <div className="flex justify-center">
-            <Button
-              size="lg"
-              className="bg-accent hover:bg-accent/90 text-accent-foreground shadow-gold text-lg px-8 py-6 group"
-            >
-              Apply Now
-              <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-smooth" />
-            </Button>
-          </div>
         </div>
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-6 h-10 border-2 border-primary-foreground/50 rounded-full flex items-start justify-center p-2">
-          <div className="w-1.5 h-3 bg-primary-foreground/50 rounded-full"></div>
+      {/* Floating Aviation Elements */}
+      <div className="absolute inset-0 z-5 pointer-events-none overflow-hidden">
+        {/* Airplane 1 */}
+        <div className="absolute top-1/4 left-0 animate-[slide-in-right_20s_linear_infinite]">
+          <div className="text-4xl opacity-30">✈️</div>
+        </div>
+        {/* Airplane 2 */}
+        <div className="absolute top-2/3 right-0 animate-[slide-in-right_25s_linear_infinite_5s]">
+          <div className="text-3xl opacity-25">✈️</div>
+        </div>
+        {/* Clouds */}
+        <div className="absolute top-1/3 right-0 animate-[slide-in-right_30s_linear_infinite_2s]">
+          <div className="text-5xl opacity-20">☁️</div>
+        </div>
+        <div className="absolute top-1/2 left-0 animate-[slide-in-right_35s_linear_infinite_8s]">
+          <div className="text-6xl opacity-15">☁️</div>
         </div>
       </div>
     </section>
