@@ -7,17 +7,17 @@ const ContactSection = () => {
     {
       icon: MapPin,
       title: 'Location',
-      content: 'Hyderabad, Telangana, India',
+      content: 'Kukatpally, Telangana, India',
     },
     {
       icon: Mail,
       title: 'Email',
-      content: 'airhostessacademy@gmail.com',
+      content: 'airlineairhostess@gmail.com',
     },
     {
       icon: Phone,
       title: 'Phone',
-      content: '+91 9876543210',
+      content: '+91 8121859590',
     },
   ];
 
