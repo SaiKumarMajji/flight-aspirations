@@ -1,22 +1,32 @@
-import { Plane, Hotel, Globe } from 'lucide-react';
+import { Plane, Ticket, MapPin, Hotel, Globe } from 'lucide-react';
 import { Card } from '@/components/ui/card';
 
 const ProgramsSection = () => {
   const programs = [
     {
       icon: Plane,
-      title: 'Aviation',
-      description: 'Comprehensive training for cabin crew and ground staff with focus on safety, service excellence, and airline operations.',
+      title: 'Cabin Crew Training',
+      description: 'Aviation hospitality, grooming, and service protocols',
+    },
+    {
+      icon: Ticket,
+      title: 'Airline Ticketing & Reservation',
+      description: 'Booking systems and passenger service operations',
+    },
+    {
+      icon: MapPin,
+      title: 'Ground Operations',
+      description: 'Airport operations and customer service excellence',
     },
     {
       icon: Hotel,
-      title: 'Hospitality',
-      description: 'Master hotel management, guest services, and hospitality operations for premium service delivery.',
+      title: 'Hospitality Management',
+      description: 'Comprehensive hospitality sector training',
     },
     {
       icon: Globe,
-      title: 'Travel and Tourism Management',
-      description: 'Explore the travel industry with training in tour operations, destination management, and customer experience.',
+      title: 'Travel & Tourism Management',
+      description: 'Tourism industry operations and management',
     },
   ];
 
@@ -32,7 +42,7 @@ const ProgramsSection = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {programs.map((program, index) => (
             <Card
               key={index}
