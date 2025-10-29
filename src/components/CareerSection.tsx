@@ -3,7 +3,6 @@ import indigoLogo from '@/assets/airlines/indigo-logo.png';
 import airIndiaLogo from '@/assets/airlines/airindia-logo.png';
 import emiratesLogo from '@/assets/airlines/emirates-logo.png';
 import qatarLogo from '@/assets/airlines/qatar-logo.png';
-import vistaraLogo from '@/assets/airlines/vistara-logo.png';
 import spicejetLogo from '@/assets/airlines/spicejet-logo.png';
 
 const CareerSection = () => {
@@ -12,7 +11,6 @@ const CareerSection = () => {
     { name: 'Air India', logo: airIndiaLogo },
     { name: 'Emirates', logo: emiratesLogo },
     { name: 'Qatar Airways', logo: qatarLogo },
-    { name: 'Vistara', logo: vistaraLogo },
     { name: 'SpiceJet', logo: spicejetLogo },
   ];
 
@@ -51,7 +49,7 @@ const CareerSection = () => {
           <h3 className="text-2xl font-bold text-center text-foreground mb-8">
             Our Alumni Work With
           </h3>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {airlines.map((airline, index) => (
               <div
                 key={index}
